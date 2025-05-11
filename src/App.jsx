@@ -7,9 +7,9 @@ import Forgetpass from "./Pages/2-Auth/Forgetpass";
 import SendCode from "./Pages/2-Auth/SendCode";
 import AllPage from "./Pages/3-Home/Home";
 
-import ProductDetail from "./pages/ProductDetail";
-import Cart from "./pages/Cart";
-import Shipping from "./pages/Shipping";
+// import ProductDetail from "./pages/ProductDetail";
+// import Cart from "./pages/Cart";
+// import Shipping from "./pages/Shipping";
 
 
 
@@ -31,9 +31,9 @@ function App() {
           <Route path="/forgetpassword/" element={<Forgetpass />} /> 
           <Route path="/sendcode/" element={<SendCode />} /> 
  
-        <Route path="/product" element={<ProductDetail />} />
+{/*         <Route path="/product" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/shipping" element={<Shipping />} />
+        <Route path="/shipping" element={<Shipping />} /> */}
 
 
           <Route path="/Home/" element={<AllPage />} /> 
