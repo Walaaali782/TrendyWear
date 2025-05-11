@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Forgetpass from "./Pages/2-Auth/Forgetpass";
 import SendCode from "./Pages/2-Auth/SendCode";
 import AllPage from "./Pages/3-Home/Home";
+import Catogry from "./pages/Catogry";
+import ProductDetail from "./pages/ProductDetail";
+import Cart from "./pages/Cart";
+import Shipping from "./pages/Shipping";
 
 
 
@@ -26,7 +30,10 @@ function App() {
           <Route path="/login/" element={<Login />} /> 
           <Route path="/forgetpassword/" element={<Forgetpass />} /> 
           <Route path="/sendcode/" element={<SendCode />} /> 
-
+        <Route path="/Catogry" element={<Catogry />} />
+        <Route path="/product" element={<ProductDetail />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/shipping" element={<Shipping />} />
 
 
           <Route path="/Home/" element={<AllPage />} /> 
