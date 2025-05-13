@@ -1,6 +1,8 @@
-
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ image, title, price }) => (
+
+
   <div className="rounded-xl bg-[#f7ebeb] p-2 text-center shadow-md">
     <div className="relative">
       <img src={image} alt={title} className="rounded-lg w-full h-[300px] object-cover" />
@@ -14,6 +16,8 @@ const ProductCard = ({ image, title, price }) => (
 );
 
 const ProductGrid = () => {
+  
+    const navigate = useNavigate();
   const products = [
     { image: "https://i.pinimg.com/736x/e1/b2/a7/e1b2a789f42285c8afce26b13d3578d6.jpg", title: "levis loose Cargo pants", price: "90.00" },
     { image: "https://i.pinimg.com/736x/c0/23/11/c02311c35d1f584689788fff953ce240.jpg", title: "levis loose Cargo pants", price: "90.00" },
@@ -35,8 +39,10 @@ const ProductGrid = () => {
 
 
 
-      <div className="flex justify-center mt-12">
-        <button className="bg-[#594545] text-white text-lg px-8 py-3 rounded-full flex items-center gap-2 hover:bg-[#3e3333] transition" style={{fontSize:'30px'}}>
+      <div className="flex justify-center mt-12" >
+        <button className="bg-[#594545] text-white text-lg px-8 py-3 rounded-full flex items-center gap-2 hover:bg-[#3e3333] transition" 
+         onClick={() => navigate(`/Catogry/`)}
+        style={{fontSize:'30px'}}>
             
           
           <span>New Collection</span>
@@ -49,3 +55,4 @@ const ProductGrid = () => {
 };
 
 export default ProductGrid;
+
